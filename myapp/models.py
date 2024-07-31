@@ -7,3 +7,4 @@ class Task(db.Model):
     title=db.Column(db.String(100),nullable=True)
     description=db.Column(db.String(200), nullable = True)
     is_complete = db.Column(db.Boolean, default = False)
+    priority = db.Column(db.Integer, default = 0)
